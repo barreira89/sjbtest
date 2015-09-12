@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<%= @post.title %> <br>
-<%= link_to image_tag(@post.image.url(:med)), @post.image.url %> <br>
+<h1><%= @post.title %> </h1>
+<%= @post.body %>
+<%= link_to image_tag(@post.image.url(:med)), @post.image.url %> <br/>
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
 
